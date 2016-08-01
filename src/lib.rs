@@ -4,4 +4,6 @@ mod tests {
     fn it_works() {
     }
 }
-// pub mod chat_gui;
+
+pub mod chat_gui;
+pub mod chat;
