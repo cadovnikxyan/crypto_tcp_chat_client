@@ -1,0 +1,9 @@
+[package]
+name = "crypto_tcp_chat_client"
+version = "0.1.0"
+authors = ["ahotchenkov <hotchenkov@list.ru>"]
+
+[dependencies]
+rust-crypto = "0.2.36"
+ncurses="5.80.0"
+rust-ini = "*"
