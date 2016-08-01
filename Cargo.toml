@@ -7,3 +7,21 @@ authors = ["ahotchenkov <hotchenkov@list.ru>"]
 rust-crypto = "0.2.36"
 ncurses="5.80.0"
 rust-ini = "*"
+# conrod = "*"
+# find_folder ="*"
+# piston_window="*"
+
+# [dependencies.kiss-ui]
+# git = "https://github.com/cybergeek94/kiss-ui"
+
+# [dependencies.rgtk]
+# git = "https://github.com/jeremyletang/rgtk.git"
+# features = ["GTK_3_12"]
+
+# [dependencies]
+# gtk = { git = "https://github.com/gtk-rs/gtk.git" }
+
+[dependencies.gtk]
+version = "*"
+# features = ["v3_10"]
+
