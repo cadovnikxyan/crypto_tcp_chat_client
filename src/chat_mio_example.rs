@@ -3,10 +3,10 @@
 extern crate mio;
 extern crate bytes;
 
-use mio::{TryRead, TryWrite};
-use mio::tcp::TcpStream;
-use mio::util::Slab;
-use bytes::Buf;
+use self::mio::{TryRead, TryWrite};
+use self::mio::tcp::TcpStream;
+use self::mio::util::Slab;
+use self::bytes::Buf;
 use std::{mem, str};
 use std::io::Cursor;
 use std::net::SocketAddr;
@@ -247,7 +247,7 @@ impl State {
     }
 }
 
-fn run(address: SocketAddr) {
+pub fn run(address: SocketAddr) {
     // Create a new event loop, panic if this fails.
     let mut event_loop = mio::EventLoop::new().unwrap();
 
@@ -316,5 +316,5 @@ fn run(address: SocketAddr) {
 }
 
 pub fn main() {
-    run("127.0.0.1:6567".parse().unwrap());
+    run("10.0.0.75:3333".parse().unwrap());
 }
