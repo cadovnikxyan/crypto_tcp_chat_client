@@ -1,9 +1,10 @@
 extern crate gtk;
+
 use self::gtk::prelude::*;
 use self::gtk::{Button,Label, Window, WindowType};
 
 
-pub fn gui_init(){
+pub fn gui_init(response:String){
     if gtk::init().is_err() {
         println!("Failed to initialize GTK.");
         return;
@@ -28,7 +29,7 @@ pub fn gui_init(){
     let second_window= Window::new(WindowType::Toplevel);
     second_window.set_title("Second Window!");
     second_window.set_default_size(200,600);
-    let label= Label::new_with_mnemonic(Some("label"));
+    let label= Label::new_with_mnemonic(Some(&*response));
     second_window.add(&label);
     second_window.show_all();
     gtk::main();

@@ -6,4 +6,5 @@ mod tests {
 }
 
 pub mod chat_gui;
-pub mod chat;
+// pub mod chat;
+pub mod chat_mio_example;
